@@ -8,3 +8,7 @@ shop_inv={
     ['Photo']={desc='A nice ready-solved 5x5 Picross.',cost=38},
     ['IceSword']={desc='Regular Attacks increase target cooldowns by 1 for 3 turns.',cost=86},
 }
+
+shoporder={
+    'Potion','Potion','Potion','MedHeal','Attack+','PermaBubble','Sponge','Photo','Photo','IceSword',
+}

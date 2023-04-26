@@ -988,11 +988,6 @@ spellorder={
 'SmolHeal','MedHeal','Meteor','Lightning','Query','Buff','Taunt','Ice','Flame','Spore','AntiSpore','Poison','AntiPsn','Leech','SoulLeech','Mine','Reflect','Flee',
 }
 
-shoporder={
-    'Potion','Potion','Potion','MedHeal','Attack+','PermaBubble','Sponge','Photo','Photo','IceSword',
-}
-
-
 load_opts()
 
 TIC=titlescr
