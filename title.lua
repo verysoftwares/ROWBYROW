@@ -1,3 +1,5 @@
+require('title_data')
+
 function titlescr()
     cls(2)
     dist=dist or 140

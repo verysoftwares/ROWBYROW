@@ -1,3 +1,5 @@
+require('dialogue_data')
+
 function dialogue()
     if cur_diag==diag_db['sc_2_avenge'] or cur_diag==diag_db['sc_2_shroom_bros2'] or cur_diag==diag_db['sc_2_shroom_bros'] then
         clip()

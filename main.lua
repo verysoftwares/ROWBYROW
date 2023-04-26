@@ -4,6 +4,15 @@
 -- script: lua
 -- saveid: ROWBYROW
 
+require('utility')
+require('utility_save')
+require('dialogue')
+require('attack_anim')
+require('enemy_anim')
+require('save-load')
+require('shop')
+require('title')
+
 debug=false
 
 t=0

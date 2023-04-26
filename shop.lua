@@ -1,3 +1,5 @@
+require('shop_data')
+
 function shoppe()
     cls(2)
     
