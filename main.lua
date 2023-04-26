@@ -181,38 +181,6 @@ end
 
 function pass() end
 
-function gain_exp()
-    local expplus=0
-    for i,e in ipairs(enemies) do
-        if expgain[e.type] then expplus=expplus+expgain[e.type] end
-    end
-    local extra=0
-    if plr.sponge then extra=expplus//4 end
-    -- lvl_tgt is used here (instead of cur_lv+1
-    -- to not gain the same level twice
-    local msg=fmt(' (%d needed for next level)',levels[lvl_tgt]-(exp+expplus+extra))
-    if exp+expplus+extra>=levels[lvl_tgt] then
-      msg=''
-    end
-    if not plr.sponge then
-    shout(fmt('Victory! Gained %d exp.%s',expplus,msg))
-    exp=exp+expplus
-    else
-    shout(fmt('Victory! Gained %d+%d exp.%s',expplus,extra,msg))
-    exp=exp+expplus
-    exp=exp+extra
-    end
-    if exp+expplus+extra>=levels[lvl_tgt] then
-        shout('LEVEL UP! Got a board upgrade!')
-        ins(plrpicross,'Upgrade')
-        cur_lv=cur_lv+1
-        lvl_tgt=lvl_tgt+1
-        shout('Max HP increased by 5!')
-        plr.maxhp=plr.maxhp+5
-        plr.origmaxhp=plr.maxhp
-    end
-end
-
 reflectshout={}
 prequeue={}
 queue={}
